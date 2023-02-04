@@ -1,4 +1,4 @@
-DEMO: decimal-calculator-patryk-pi
+DEMO: https://decimal-calculator-patryk-pi.netlify.app/
 
 Decimal Calculator built on the bases of pre-prepared Calculator and Binary Calculator ES6 classes. Binary and Decimal calculators are extending the Calculator Class.
 

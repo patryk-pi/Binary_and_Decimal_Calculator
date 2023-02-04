@@ -17,7 +17,7 @@ class Calculator {
    */
   add(numberX, numberY) {
     console.error(
-      "Powinieneśzaimplementować tę metodę w klasie dziedziczącej."
+      "Powinienes zaimplementować tę metodę w klasie dziedziczącej."
     );
     return [0, 0, 0, 0, 0, 0, 0, 0];
   }
@@ -54,9 +54,11 @@ class Calculator {
     let $resultNumber = root.querySelectorAll(".group-number .result-bit");
 
     for (let i = $firstNumber.length - 1, j = 0; i >= 0; i--, j++) {
-      this.firstNumberArray[i] = parseInt($firstNumber[j].firstElementChild.innerText);
-      this.secondNumberArray[i] = parseInt($secondNumber[j].firstElementChild.innerText);
-      this.resultNumberArray[i] = parseInt($resultNumber[j].firstElementChild.innerText);
+
+      this.firstNumberArray[i] = +($firstNumber[j].firstElementChild.innerText);
+      this.secondNumberArray[i] = +($secondNumber[j].firstElementChild.innerText);
+      this.resultNumberArray[i] = +($resultNumber[j].firstElementChild.innerText);
+
     }
 
     this.resultNumberArray = this.add(
